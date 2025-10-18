@@ -13,16 +13,19 @@ namespace App.Topics.Collections.T1_Collections
             HashSet<string> seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
             foreach (var item in source)
+
             {
                 if (item is string str)
                 {
                     string trimmed = str.Trim();
 
-                    // ѕропускаем пустые строки после Trim()
+          
                     if (string.IsNullOrEmpty(trimmed))
+
+
                         continue;
 
-                    // ѕровер€ем, встречалась ли уже така€ строка (case-insensitive)
+             
                     if (!seen.Contains(trimmed))
                     {
                         seen.Add(trimmed);
@@ -43,11 +46,21 @@ namespace App.Topics.Collections.T1_Collections
             {
                 string trimmed = str.Trim();
 
-                // ѕропускаем пустые строки после Trim()
+        
+
+
+
+
                 if (string.IsNullOrEmpty(trimmed))
                     continue;
 
-                // ѕровер€ем, встречалась ли уже така€ строка (case-insensitive)
+           
+
+
+
+
+
+
                 if (!seen.Contains(trimmed))
                 {
                     seen.Add(trimmed);
